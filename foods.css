@@ -70,23 +70,29 @@ body {
   opacity: 0.8;
   
   background-size: cover;
+  box-sizing: border-box;
 
 }
 
 .hero h1 {
+  margin: auto;
   font-size: 60px;
-  margin-bottom: auto;
+  position: sticky;
 
 }
 .hero h1:hover {
   color: #ffcc00;
   animation: Pulse 2s ease infinite;
+    position: sticky;
+
 
 }
 
 .hero p {
   font-size: 1.2rem;
   animation: Pulse 2s ease infinite;
+    position: sticky;
+
 
 }
 @keyframes Pulse {
