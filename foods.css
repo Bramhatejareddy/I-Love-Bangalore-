@@ -8,7 +8,7 @@
 }
 
 body {
-  margin: auto;
+  margin-top: 30px;
   /* font-family: 'Times New Roman', Times, serif; */
   background: url('images/foodbg.jpg') no-repeat center center fixed;
   color: rgb(245, 243, 243);
@@ -66,7 +66,6 @@ body {
 
 /* Hero */
 .hero {
-  margin-top: 30px;
   text-align: center;
   padding: 100px 50px 60px;
   opacity: 0.8;
