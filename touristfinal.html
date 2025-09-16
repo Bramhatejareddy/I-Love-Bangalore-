@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bangalore Tourist Places</title>
+  <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+        text-decoration: none;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: transparent; */
+         background: linear-gradient(90deg, #1a1a1a, #333);
+        margin-top: 0px;
+        color: rgb(246, 245, 245);
+        padding: 15px 30px;
+        position: fixed;
+        z-index:4;
+        width: 100%;
+      }
+
+      .logo{
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .logo img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: 500;
+      }
+      .nav a:hover {
+        color: #f9cd1ecf;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(120deg, #fbc2eb, #a6c1ee);
+        color: #333;
+      }
+
+      /* Header section with background image */
+      .heade {
+        height: 26rem;
+        text-align: center;
+        padding: 60px 20px;
+        color: white;
+        position: relative;
+      }
+
+      /* Overlay for better text visibility */
+      .heade::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+background: linear-gradient(120deg, #fbc2eb, #a6c1ee);
+      }
+
+      .heade h1, .heade p {
+        position: relative;
+        z-index: 1;
+      }
+
+      .heade h1 {
+        font-size: 3rem;
+        margin-top: 100px;
+        animation: vibrate 2s ease infinite;
+      }
+      .heade p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        animation: vibrate 2s ease infinite;
+      }
+
+      /* Grid Layout */
+      .container {
+        max-width: 1200px;
+        margin: 60px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 50px;
+        padding: 20px;
+      }
+
+      /* Card with 3D Flip Effect */
+      .card {
+        perspective: 1200px;
+        position: relative;
+      }
+      .card-inner {
+        position: relative;
+        width: 100%;
+        height: 380px;
+        transition: transform 0.8s ease;
+        transform-style: preserve-3d;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        transform-origin: center;
+      }
+      .card:hover {
+        z-index: 20;
+      }
+      .card:hover .card-inner {
+        transform: rotateY(180deg);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      }
+
+      .card-front, .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      .card-front {
+        background: #000;
+      }
+      .card-front img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+      .card:hover .card-front img {
+        transform: scale(1.1);
+      }
+      .card-front h2 {
+        position: absolute;
+        bottom: 15px;
+        left: 20px;
+        color: white;
+        font-size: 1.5rem;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+      }
+
+      .card-back {
+        background: linear-gradient(120deg, rgba(255, 154, 158, 0.6), rgba(250, 208, 196, 1));
+        color: white;
+        transform: rotateY(180deg);
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 20px;
+        text-align: center;
+      }
+      .card-back p {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      .button-container {
+        margin-top: 15px;
+      }
+      .button-container a {
+        display: inline-block;
+        padding: 10px 20px;
+        background: violet;
+        color: white;
+        border-radius: 8px;
+        font-weight: bold;
+      }
+      .button-container a:hover {
+        background: #ff6bff;
+      }
+
+      /* Footer */
+      .footer {
+  background: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+      /* Animations */
+      @keyframes vibrate {
+        from { transform: translateY(0); }
+        25% { transform: translateY(-5px); }
+        50% { transform: translateY(5px); }
+        75% { transform: translateY(-5px); }
+        to { transform: translateY(0); }
+      }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <div><a href="h1.html"><img src="images/ub.jpg" alt="brsm"></a></div>
+       I Love Bengaluru
+       
+    </div>
+    <nav class="nav">
+      <a href="h1.html">Home</a>
+      <a href="food.html">Food</a>
+      <a href="malls.html">Malls</a>
+      <a href="top.html">Universities</a>
+      <a href="touristfinal.html">Tourist Places</a>
+      <a href="it.html">Companies</a>
+    </nav>
+  </header>
+
+  <div class="heade">
+    <h1>Tourist Places in Bangalore</h1>
+    <p>Experience Bangalore like never before ✨🌆</p>
+  </div>
+
+  <div class="container">
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="Bengaluru Palace.jpeg.jpg" alt="Bangalore Palace">
+          <h2>Bangalore Palace</h2>
+        </div>
+        <div class="card-back">
+          <p>A Tudor-style royal palace with breathtaking architecture.<br><b>Location:</b> Vasanth Nagar, Bangalore</p>
+          <div class="button-container"><a href="https://www.google.com/maps/place/Bengaluru+Palace/@13.0035956,77.5866758,16.92z/data=!4m6!3m5!1s0x3bae1649294a5637:0xb1f8b77e331512cf!8m2!3d13.0035068!4d77.5890953!16s%2Fm%2F02pf96d?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">View Place</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="lalbagh garden.jpeg.jpg" alt="Lalbagh Botanical Garden">
+          <h2>Lalbagh Botanical Garden</h2>
+        </div>
+        <div class="card-back">
+          <p>Famous for its glasshouse and vibrant flower shows.<br><b>Location:</b> Lalbagh Road, Bangalore</p>
+          <div class="button-container"><a href="https://www.google.com/maps/search/lalbagh+botanical+garden+map/@12.9494148,77.584483,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">View Place</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="cubbon park.jpeg.jpg" alt="Cubbon Park">
+          <h2>Cubbon Park</h2>
+        </div>
+        <div class="card-back">
+          <p>A lush green paradise for relaxation.<br><b>Location:</b> Kasturba Road, Bangalore</p>
+          <div class="button-container"><a href="https://www.google.com/maps/search/Cubbon+Park+maps/@12.9766164,77.5895209,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">View Place</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="iskcon.jpeg.jpg" alt="ISKCON Temple">
+          <h2>ISKCON Temple</h2>
+        </div>
+        <div class="card-back">
+          <p>One of the largest ISKCON temples worldwide.<br><b>Location:</b> Rajajinagar, Bangalore</p>
+          <div class="button-container"><a href="https://www.google.com/maps/search/iskcon+temple/@12.9628655,77.702258,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">View Place</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="vidhan soudha.jpeg.jpg" alt="Vidhana Soudha">
+          <h2>Vidhana Soudha</h2>
+        </div>
+        <div class="card-back">
+          <p>Magnificent legislative building.<br><b>Location:</b> Ambedkar Bheedhi, Bangalore</p>
+          <div class="button-container"><a href="https://www.google.com/maps/search/Vidhana+Soudha+maps/@12.979393,77.5880761,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">View Place</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 (Nandi Hills instead of UB City) -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="nandhi hills.jpeg.jpg" alt="Nandi Hills">
+          <h2>Nandi Hills</h2>
+        </div>
+        <div class="card-back">
+          <p>A scenic hill station perfect for sunrise views.<br><b>Location:</b> Chikkaballapur, near Bangalore</p>
+          <div class="button-container"><a href="https://www.google.com/maps/place/Nandi+Hills,+Karnataka/@13.3828867,77.627817,13z/data=!3m1!4b1!4m6!3m5!1s0x3bb1e445ebfcea17:0x1639f72959196608!8m2!3d13.3838935!4d77.6833026!16zL20vMDloMDFo?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">View Place</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="Wonderla.jpeg.jpg" alt="Wonderla Amusement Park">
+          <h2>Wonderla</h2>
+        </div>
+        <div class="card-back">
+          <p>Top amusement and water park.<br><b>Location:</b> Mysore Road, Bangalore</p>
+          <div class="button-container"><a href="https://www.google.com/maps/place/Wonderla+Amusement+Park,+Bengaluru/@12.8349095,77.398366,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae47c7ffab735b:0x5e52a4e8d0a84438!8m2!3d12.8349095!4d77.4009409!16s%2Fg%2F1w15xwpd?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">View Place</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 8 (Tipu Sultan’s Summer Palace instead of Commercial Street) -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="Tipu Sultan's Summer Palace.jpeg.jpg" alt="Tipu Sultan Summer Palace">
+          <h2>Tipu Sultan's Summer Palace</h2>
+        </div>
+        <div class="card-back">
+          <p>A historical palace built with teak wood showcasing Indo-Islamic architecture.<br><b>Location:</b> KR Market, Bangalore</p>
+          <div class="button-container"><a href="https://www.google.com/maps/place/Tipu+Sultan's+Summer+Palace/@12.9593513,77.5710666,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae15e4b434e601:0x1a69fbe395219f75!8m2!3d12.9593513!4d77.5736415!16s%2Fm%2F06wb67f?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">View Place</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="Bannerghatta National Park.jpeg.jpg" alt="Bannerghatta National Park">
+          <h2>Bannerghatta National Park</h2>
+        </div>
+        <div class="card-back">
+          <p>Wildlife sanctuary with safari rides.<br><b>Location:</b> Bannerghatta Road, Bangalore</p>
+          <div class="button-container"><a href="https://www.google.com/maps/place/Bannerghatta+National+Park/@12.7784415,77.5694531,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae6ba87f09fc55:0x96b24101b2a3dcd9!8m2!3d12.7784415!4d77.572028!16s%2Fg%2F11rsr_xg8f?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">View Place</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="Innovative Film City.jpeg.jpg" alt="Innovative Film City">
+          <h2>Innovative Film City</h2>
+        </div>
+        <div class="card-back">
+          <p>Theme park with museums and film studio.<br><b>Location:</b> Bidadi, Bangalore</p>
+          <div class="button-container"><a href="https://www.google.com/maps/search/Innovative+Film+City+map/@12.9628631,77.6816578,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">View Place</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <footer class="footer">
+    <div class="nav">
+    <a href="h1.html">Home</a>
+      <a href="food.html">Food</a>
+      <a href="malls.html">Places</a>
+      <a href="contact.html">Contact</a>
+      </div>
+    <p>© 2025 I Love Bengaluru. All rights reserved.</p>
+  </footer>
+</body>
+</html>

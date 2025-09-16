@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Companies in Bangalore</title>
+  <style>
+
+    /* Header */
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  text-decoration: none;
+  
+
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: rgb(246, 245, 245);
+  padding: 15px 30px;
+  position: fixed;
+  z-index:4;
+  width: 100%;
+}
+
+.logo{
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+   display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.logo img {
+  text-decoration: none;
+  height: 40px;   /* adjust size */
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;}
+
+.nav a {
+  color: rgb(246, 9, 9);
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  /* position: sticky; */
+}
+
+.nav a:hover {
+  color: #f9cd1ecf;
+}
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background: url('combg.jpg') no-repeat center center fixed;
+      box-sizing: border-box; 
+      background-size: cover; 
+     
+      
+    }
+
+    .Head {
+        background-color: transparent;
+      color: rgb(187, 23, 23);
+      padding: 50px 20px;
+      text-align: center;
+      height: 26rem;
+    }
+
+    .Head h1 {
+
+      margin-top: 100px;
+      font-size: 2.8rem;
+      animation: fadeInDown 2.5s ease;
+
+    }
+
+    .Head p {
+      margin: 10px;
+      font-size: 1.2rem;
+      animation: fadeInDown 2.5s ease;
+
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .company {
+background: linear-gradient(120deg, rgba(155, 124, 118, 0.6), rgba(250, 208, 196, 0.8));
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      text-align: center;
+      animation: fadeInUp 1s ease;
+    }
+    .infosys{
+      background-image: url(images/infosys.jpg);
+      background-size: cover;
+    }
+
+
+    .company:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 0px 24px rgba(0,0,0,5);
+      background-color: transparent;
+      color: white;
+
+    }
+
+    .company img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      background-color: transparent;
+      transition: transform 0.4s;
+    }
+
+    .company:hover img {
+      transform: scale(1.1);
+      background-color: transparent;      
+    }
+
+    .company h2 {
+      color: #2c3e50;
+      margin: 10px 0;
+    }
+
+    .company p {
+      margin: 5px 0;
+      font-size: 0.95rem;
+    }
+
+    .footer {
+  background: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-100px); }
+      to { opacity: 1; transform: translateY(0px); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+   <header class="header">
+    <div class="logo">
+      <div><a href="h1.html"><img src="images/ub.jpg" alt="brsm"></a></div>
+       I Love Bengaluru
+       
+    </div>
+    <nav class="nav">
+      <a href="h1.html">Home</a>
+      <a href="food.html">Food</a>
+      <a href="malls.html">Malls</a>
+      <a href="top.html">Universities</a>
+      <a href="touristfinal.html">Tourist Places</a>
+      <a href="com.html">Companies</a>
+    </nav>
+  </header>
+
+  <div class="Head">
+    <h1>Top Companies in Bangalore</h1>
+    <p>The Silicon Valley of India 🌆</p>
+  </div>
+
+  <div class="container">
+    <div class="company infosys">
+      <img src="images/infosys.jpg" alt="Infosys Logo">
+      <h2>Infosys</h2>
+      <p><b>Industry:</b> IT Services</p>
+      <p><b>Headquarters:</b> Bengaluru, Karnataka</p>
+    </div>
+
+    <div class="company wipro">
+      <img src="images/wipro.png" alt="Wipro Logo">
+      <h2>Wipro</h2>
+      <p><b>Industry:</b> IT, Consulting</p>
+      <p><b>Headquarters:</b> Sarjapur Road, Bengaluru</p>
+    </div>
+
+    <div class="company flipkart">
+      <img src="images/flipcart.png" alt="Flipkart Logo">
+      <h2>Flipkart</h2>
+      <p><b>Industry:</b> E-Commerce</p>
+      <p><b>Headquarters:</b> Embassy Tech Village, Bengaluru</p>
+    </div>
+
+    <div class="company tcs">
+      <img src="images/tcs.jpg">
+      <h2>TCS</h2>
+      <p><b>Industry:</b> IT Services</p>
+      <p><b>Office:</b> Whitefield, Bengaluru</p>
+    </div>
+
+    <div class="company ibm">
+      <img src="images/ibm.jpg" alt="IBM Logo">
+      <h2>IBM India</h2>
+      <p><b>Industry:</b> IT & Cloud Services</p>
+      <p><b>Office:</b> Manyata Tech Park, Bengaluru</p>
+    </div>
+    <div class="company ibm">
+      <img src="images/ibm.jpg" alt="IBM Logo">
+      <h2>IBM India</h2>
+      <p><b>Industry:</b> IT & Cloud Services</p>
+      <p><b>Office:</b> Manyata Tech Park, Bengaluru</p>
+    </div>
+    <div class="company ibm">
+      <img src="images/ibm.jpg" alt="IBM Logo">
+      <h2>IBM India</h2>
+      <p><b>Industry:</b> IT & Cloud Services</p>
+      <p><b>Office:</b> Manyata Tech Park, Bengaluru</p>
+    </div>
+    <div class="company ibm">
+      <img src="images/ibm.jpg" alt="IBM Logo">
+      <h2>IBM India</h2>
+      <p><b>Industry:</b> IT & Cloud Services</p>
+      <p><b>Office:</b> Manyata Tech Park, Bengaluru</p>
+    </div>
+    <div class="company ibm">
+      <img src="images/ibm.jpg" alt="IBM Logo">
+      <h2>IBM India</h2>
+      <p><b>Industry:</b> IT & Cloud Services</p>
+      <p><b>Office:</b> Manyata Tech Park, Bengaluru</p>
+    </div>
+    <div class="company ibm">
+      <img src="images/ibm.jpg" alt="IBM Logo">
+      <h2>IBM India</h2>
+      <p><b>Industry:</b> IT & Cloud Services</p>
+      <p><b>Office:</b> Manyata Tech Park, Bengaluru</p>
+    </div>
+    <div class="company ibm">
+      <img src="images/ibm.jpg" alt="IBM Logo">
+      <h2>IBM India</h2>
+      <p><b>Industry:</b> IT & Cloud Services</p>
+      <p><b>Office:</b> Manyata Tech Park, Bengaluru</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="nav">
+    <a href="h1.html">Home</a>
+      <a href="food.html">Food</a>
+      <a href="malls.html">Places</a>
+      <a href="contact.html">Contact</a>
+      </div>
+    <p>© 2025  Bengaluru. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

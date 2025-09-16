@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Universities in Bangalore</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  text-decoration: none;
+  
+
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: transparent; */
+   background: linear-gradient(90deg, #1a1a1a, #333);
+        margin-top: 0px;
+  color: rgb(246, 245, 245);
+  padding: 15px 30px;
+  position: fixed;
+  z-index:4;
+  width: 100%;
+}
+
+.logo{
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+   display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.logo img {
+  text-decoration: none;
+  height: 40px;   /* adjust size */
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  /* position: sticky; */
+}
+
+.nav a:hover {
+  color: #f9cd1ecf;
+}
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Hero Section */
+    .heade {
+      position: relative;
+      background: linear-gradient(135deg, #1a2980, #26d0ce);
+      color: white;
+      
+      text-align: center;
+      padding: 80px 20px 120px;
+      clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+    }
+
+    .heade h1 {
+      font-size: 3rem;
+      margin: 0;
+            animation: fadeIn 1.5s ease;
+
+    }
+
+    .heade p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+            animation: fadeIn 1.5s ease;
+
+    }
+
+    /* Grid */
+    .container {
+      max-width: 1200px;
+      margin: -60px auto 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      padding: 20px;
+      z-index: -1;
+    }
+
+    /* Card */
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      border: 3px solid transparent;
+      background-image: linear-gradient(white, white),
+        linear-gradient(135deg, #1a2980, #26d0ce);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      z-index: 1;
+    }
+
+    .card:hover {
+      transform: translateY(-12px) scale(1.02);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-content h2 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Animated underline */
+    .card-content h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, #1a2980, #26d0ce);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.4s ease;
+    }
+    .card:hover img {
+  transform: scale(1.1);
+}
+
+    .card:hover  h2::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    footer {
+      background: #1a2980;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .footer {
+  background: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+  </style>
+</head>
+<body>
+    <header class="header">
+    <div class="logo">
+      <div><a href="h1.html"><img src="images/ub.jpg" alt="brsm"></a></div>
+       I Love Bengaluru
+       
+    </div>
+    <nav class="nav">
+      <a href="h1.html">Home</a>
+      <a href="food.html">Food</a>
+      <a href="malls.html">Malls</a>
+      <a href="top.html">Universities</a>
+      <a href="touristfinal.html">Tourist Places</a>
+      <a href="it.html">Companies</a>
+    </nav>
+  </header>
+
+  <div class="heade">
+    <h1>Top Universities in Bangalore</h1>
+    <p>Explore the most prestigious educational institutions 🎓</p>
+  </div>
+
+  <div class="container">
+
+    <!-- Indian Institute of Science (IISc) -->
+    <div class="card">
+      <img src="images/image1.jpg" alt="IISc Bangalore">
+      <div class="card-content">
+        <h2>Indian Institute of Science (IISc)</h2>
+        <p>India’s premier research institute, ranked globally for excellence in science & engineering.</p>
+      </div>
+    </div>
+
+    <!-- Indian Institute of Management (IIMB) -->
+    <div class="card">
+      <img src="images/image2.jpg" alt="IIM Bangalore">
+      <div class="card-content">
+        <h2>Indian Institute of Management (IIMB)</h2>
+        <p>A top business school in Asia, offering world-class MBA and management programs.</p>
+      </div>
+    </div>
+
+    <!-- Christ University -->
+    <div class="card">
+      <img src="images/image3.jpg" alt="Christ University">
+      <div class="card-content">
+        <h2>Christ University</h2>
+        <p>A leading private university recognized for excellence in humanities, sciences, and business studies.</p>
+      </div>
+    </div>
+
+    <!-- St. John’s Medical College-->
+    <div class="card">
+      <img src="images/image4.jpg" alt="St. John’s Medical College">
+      <div class="card-content">
+        <h2>St. John’s Medical College</h2>
+        <p>Renowned for its medical education, research, and healthcare excellence in India.</p>
+      </div>
+    </div>
+
+    <!-- RV College of Engineering -->
+    <div class="card">
+      <img src="images/image5.jpg" alt="Christ University">
+      <div class="card-content">
+        <h2>RV College of Engineering</h2>
+        <p>It is one of the leading engineering institutions 
+      in India. It offers undergraduate, postgraduate, and doctoral programs in engineering.</p>
+      </div>
+    </div>
+    
+    <!-- PES University -->
+    <div class="card">
+      <img src="images/image6.jpg" alt="Christ University">
+      <div class="card-content">
+        <h2>PES University</h2>
+        <p>It is a renowned private university offering programs in engineering,
+       management, law, and life sciences.</p>
+      </div>
+    </div>
+
+    <!-- Jain University -->
+    <div class="card">
+      <img src="images/image7.jpeg" alt="Christ University">
+      <div class="card-content">
+        <h2>Jain University</h2>
+        <p>A leading private university offering undergraduate, 
+      postgraduate, and doctoral programs in arts, science, commerce, management, and more.</p>
+      </div>
+    </div>
+
+    <!-- Bangalore University -->
+    <div class="card">
+      <img src="images/image8.jpeg" alt="Christ University">
+      <div class="card-content">
+        <h2>Bangalore University</h2>
+        <p>It is one of India’s oldest and most respected public 
+      universities. It offers a wide range of undergraduate, postgraduate</p>
+      </div>
+    </div>
+
+    <!-- Oxford College of Engineering -->
+    <div class="card">
+      <img src="images/image9.jpeg" alt="Christ University">
+      <div class="card-content">
+        <h2>Oxford College of Engineering</h2>
+        <p>Offering a variety of engineering programs, Oxford College emphasizes practical learning and industry exposure.</p>
+      </div>
+    </div>
+
+    <!-- Nitte Meenakshi Institute of Technology (NMIT) -->
+    <div class="card">
+      <img src="images/image10.jpg" alt="Christ University">
+      <div class="card-content">
+        <h2>Nitte Meenakshi Institute of Technology (NMIT)</h2>
+        <p>NMIT provides quality education in engineering and technology, focusing on innovation, research, and industry collaboration.</p>
+      </div>
+    </div>
+
+    <!-- Bangalore Institute of Technology (BIT) -->
+    <div class="card">
+      <img src="images/image11.jpeg" alt="Christ University">
+      <div class="card-content">
+        <h2>Bangalore Institute of Technology (BIT)</h2>
+        <p>BIT offers undergraduate and postgraduate programs in engineering, with a strong emphasis on research and development.</p>
+      </div>
+    </div>
+
+    <!-- Acharya Institute of Technology -->
+    <div class="card">
+      <img src="images/image12.jpg" alt="Christ University">
+      <div class="card-content">
+        <h2>Acharya Institute of Technology</h2>
+        <p>Known for its diverse academic offerings, Acharya Institute focuses on providing quality education in engineering, management, and applied sciences.</p>
+      </div>
+    </div>
+
+    <!-- Ramaiah Institute of Technology (MSRIT) -->
+    <div class="card">
+      <img src="images/image13.jpeg" alt="Christ University">
+      <div class="card-content">
+        <h2>Ramaiah Institute of Technology (MSRIT)</h2>
+        <p>A leading private engineering college, MSRIT is known for its academic excellence, state-of-the-art infrastructure, and strong placement records.</p>
+      </div>
+    </div>
+
+    <!-- BMS College of Engineering (BMSCE) -->
+    <div class="card">
+      <img src="images/image14.jpeg" alt="Christ University">
+      <div class="card-content">
+        <h2>BMS College of Engineering (BMSCE)</h2>
+        <p>One of the oldest engineering colleges in India, BMSCE offers a wide range of undergraduate and postgraduate programs with a focus on research and innovation.</p>
+      </div>
+    </div>
+
+    <!--M.S. Ramaiah University of Applied Sciences (MSRUAS)-->
+    <div class="card">
+      <img src="images/image15.webp" alt="Christ University">
+      <div class="card-content">
+        <h2>M.S. Ramaiah University of Applied Sciences (MSRUAS)</h2>
+        <p>Known for its emphasis on applied sciences and engineering, MSRUAS provides a practical approach to education with strong industry collaborations.</p>
+      </div>
+    </div>
+    
+    <!-- National Institute of Fashion Technology (NIFT), Bangalore -->
+    <div class="card">
+      <img src="images/image16.jpeg" alt="Christ University">
+      <div class="card-content">
+        <h2>National Institute of Fashion Technology (NIFT), Bangalore</h2>
+        <p>A premier institute for fashion education, NIFT Bangalore offers programs in design, technology, and management, shaping future leaders in the fashion industry.</p>
+      </div>
+    </div>
+
+    <!-- University of Agricultural Sciences, Bangalore (UASB) -->
+    <div class="card">
+      <img src="images/image17.jpg" alt="Christ University">
+      <div class="card-content">
+        <h2>University of Agricultural Sciences, Bangalore (UASB)</h2>
+        <p>A leading institution in agricultural research and education, UASB contributes significantly to advancements in agriculture and allied sciences.</p>
+      </div>
+    </div>
+
+    <!-- National Law School of India University (NLSIU) -->
+    <div class="card">
+      <img src="images/image18.jpg" alt="Christ University">
+      <div class="card-content">
+        <h2>National Law School of India University (NLSIU)</h2>
+        <p>Recognized as India's premier law university, NLSIU offers comprehensive legal education and has a strong track record in national and international moot courts.</p>
+      </div>
+    </div>
+
+  </div>
+
+   <footer class="footer">
+    <div class="nav">
+    <a href="h1.html">Home</a>
+      <a href="food.html">Food</a>
+      <a href="malls.html">Places</a>
+      <a href="contact.html">Contact</a>
+      </div>
+    <p>© 2025  Bengaluru. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

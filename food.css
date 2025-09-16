@@ -1,0 +1,151 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a1a;
+  color: white;
+  padding: 15px 30px;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logo a:hover {
+  color: #ffcc00;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #ffcc00;
+}
+
+/* Hero */
+.hero {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Foods Grid */
+.foods {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.foods h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.foods .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0; right: 0;
+  background: rgba(0,0,0,0.7);
+  padding: 15px;
+  text-align: left;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.card:hover .overlay {
+  transform: translateY(0);
+}
+
+.overlay h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.overlay p {
+  font-size: 0.9rem;
+  color: #ffcc00;
+}
+
+/* Footer */
+.footer {
+  background: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}

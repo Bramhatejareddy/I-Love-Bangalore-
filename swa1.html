@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Incredible India</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      background: url('about-hero.jpg') center/cover fixed no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      color: white;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      background: linear-gradient(90deg, #ff9966, #ff5e62);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero h1::after {
+      content: "";
+      position: absolute;
+      top: 0; left: -100%;
+      width: 100%; height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
+      animation: shine 3s infinite;
+    }
+    .hero p { margin-top: 15px; font-size: 1.2rem; color: #eee; }
+
+    /* Sections */
+    section { padding: 80px 10%; }
+
+    /* Split Layout */
+    .split {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+    .split img {
+      flex: 1;
+      max-width: 500px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+      transition: transform 0.5s ease;
+    }
+    .split img:hover { transform: scale(1.05) rotate(-1deg); }
+    .split-text { flex: 1; min-width: 280px; }
+    .split-text h2 {
+      font-size: 2.3rem;
+      margin-bottom: 15px;
+      color: #e67300;
+      position: relative;
+    }
+    .split-text h2::after {
+      content: "";
+      position: absolute;
+      bottom: -5px; left: 0;
+      width: 60px; height: 4px;
+      background: #e67300;
+      border-radius: 5px;
+    }
+    .split-text p { font-size: 1.1rem; margin-bottom: 15px; line-height: 1.7; color: #444; }
+
+    /* Timeline */
+    
+    /* Counters */
+    .counters {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .counter {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #ff5e62;
+    }
+    .counter-label { margin-top: 8px; font-size: 1.1rem; color: #444; }
+
+    /* Team */
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .team-card { perspective: 1000px; }
+    .team-inner {
+      position: relative;
+      width: 100%; height: 300px;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    .team-card:hover .team-inner { transform: rotateY(180deg); }
+    .team-front, .team-back {
+      position: absolute;
+      width: 100%; height: 100%;
+      border-radius: 12px;
+      backface-visibility: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .team-front { background: url('team1.jpg') center/cover no-repeat; }
+    .team-back {
+      background: linear-gradient(135deg,#ff9966,#ff5e62);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: rotateY(180deg);
+      padding: 20px;
+    }
+
+    /* Glassmorphism Values */
+    .values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .card {
+      background: rgba(255,255,255,0.15);
+      border-radius: 15px;
+      padding: 30px;
+      color: white;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      transition: transform 0.4s, box-shadow 0.4s;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-12px) scale(1.03);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #bbb;
+      text-align: center;
+      padding: 30px;
+    }
+    .social-icons { margin-top: 10px; }
+    .social-icons a {
+      display: inline-block;
+      width: 40px; height: 40px;
+      margin: 0 5px;
+      background: #222;
+      border-radius: 50%;
+      line-height: 40px;
+      color: #fff;
+      transition: background 0.4s, transform 0.4s;
+    }
+    .social-icons a:hover {
+      background: linear-gradient(135deg,#ff9966,#ff5e62);
+      transform: scale(1.2);
+    }
+
+    /* Animations */
+    @keyframes fadeIn { from {opacity:0; transform:translateY(40px);} to {opacity:1; transform:translateY(0);} }
+    @keyframes shine { to { left: 100%; } }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .hero h1 { font-size: 2.3rem; }
+      .split { flex-direction: column; }
+      .tl-container.right { left: 0; }
+      .timeline::after { left: 20px; }
+      .tl-container { width: 100%; margin-left: 50px; }
+      .tl-container.left::before,
+      .tl-container.right::before { left: -40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>About Incredible India</h1>
+      <p>Discover journeys, culture, and timeless traditions that inspire the world.</p>
+    </div>
+  </section>
+
+  <!-- Who We Are -->
+  <section>
+    <div class="split">
+      <img src="about1.jpg" alt="Travel India">
+      <div class="split-text">
+        <h2>Who We Are</h2>
+        <p><strong>Incredible India Tourism</strong> is a collective of explorers, storytellers, and hospitality experts, driven by the passion to showcase India’s soul.</p>
+        <p>We bridge history with modern travel, guiding travelers to explore timeless monuments, hidden gems, and cultural wonders.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section style="background:#fdfdfd;">
+    <div class="split">
+      <div class="split-text">
+        <h2>Our Story</h2>
+        <p>What began as a dream of a few travelers has grown into a movement that connects millions to India’s heart.</p>
+        <p>From curating destinations to promoting sustainable travel, our story is one of passion, respect, and discovery.</p>
+      </div>
+      <img src="about2.jpg" alt="Our Story">
+    </div>
+  </section>
+
+  <!-- Our Journey -->
+ 
+
+  <!-- Counters -->
+  <section>
+    <h2 style="text-align:center; margin-bottom:30px;">Our Achievements</h2>
+    <div class="counters">
+      <div><div class="counter">10K+</div><div class="counter-label">Happy Travelers</div></div>
+      <div><div class="counter">500+</div><div class="counter-label">Destinations</div></div>
+      <div><div class="counter">1200+</div><div class="counter-label">Cultural Experiences</div></div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section style="background:#fafafa;">
+    <h2 style="text-align:center; margin-bottom:40px;">Meet Our Team</h2>
+    <div class="team">
+      <div class="team-card">
+        <div class="team-inner">
+          <div class="team-front"></div>
+          <div class="team-back"><h3>Ananya Sharma</h3><p>Founder & CEO</p></div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-inner">
+          <div class="team-front" style="background:url('team2.jpg') center/cover no-repeat;"></div>
+          <div class="team-back"><h3>Rahul Mehta</h3><p>Travel Curator</p></div>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-inner">
+          <div class="team-front" style="background:url('team3.jpg') center/cover no-repeat;"></div>
+          <div class="team-back"><h3>Kavita Rao</h3><p>Culture Expert</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Vision Values -->
+  <section style="background: linear-gradient(135deg,#ff9966,#ff5e62); color:white;">
+    <h2 style="text-align:center; margin-bottom:40px;">Our Mission, Vision & Values</h2>
+    <div class="values">
+      <div class="card"><h3>🌍 Mission</h3><p>To inspire and guide travelers to explore India’s diversity with authenticity and respect.</p></div>
+      <div class="card"><h3>👁️ Vision</h3><p>To be the leading voice of Indian tourism, connecting the world with our culture and heritage.</p></div>
+      <div class="card"><h3>💡 Values</h3><p>Hospitality, sustainability, authenticity, and a deep love for storytelling.</p></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Incredible India Tourism. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#">F</a>
+      <a href="#">I</a>
+      <a href="#">T</a>
+    </div>
+  </footer>
+
+</body>
+</html>
