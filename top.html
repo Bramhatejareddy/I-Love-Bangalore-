@@ -85,7 +85,7 @@
 
     .heade p {
       font-size: 1.2rem;
-      margin-top: 10px;
+      margin-top: 30px;
             animation: fadeIn 1.5s ease;
 
     }
@@ -93,12 +93,14 @@
     /* Grid */
     .container {
       max-width: 1200px;
-      margin: -60px auto 60px;
+      margin: auto;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 40px;
       padding: 20px;
       z-index: -1;
+      overflow: hidden;
+      box-sizing: border-box;
     }
 
     /* Card */
@@ -177,7 +179,7 @@
     /* Animation */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
+      to { opacity: 1; transform: translateY(10); }
     }
     .footer {
   background: #1a1a1a;
