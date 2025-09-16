@@ -25,43 +25,47 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: transparent; */
   background: linear-gradient(90deg, #1a1a1a, #333);
-  color: rgb(246, 245, 245);
-  padding: 15px 30px;
+  /* background-color: transparent; */
+  color: white;
   position: fixed;
+  padding: 15px 30px;
   z-index:4;
   width: 100%;
+  margin-top: 0px;
 }
 
-.logo{
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: white;
-   display: flex;
+.logo {
+  display: flex;
   align-items: center;
   gap: 10px;
   justify-content: space-between;
   font-weight: bold;
   font-size: 1.2rem;
+
 }
+
 .logo img {
-  text-decoration: none;
   height: 40px;   /* adjust size */
   width: 40px;
   border-radius: 50%;
-}
+  }
+
+
+
 
 .nav a {
   color: white;
   text-decoration: none;
   margin-left: 20px;
-  font-weight: 100;
+  font-weight: 500;
   /* position: sticky; */
 }
 
+
+
 .nav a:hover {
-  color: #f9cd1ecf;
+  color: #ffcc00;
 }
 
 /* Hero */
