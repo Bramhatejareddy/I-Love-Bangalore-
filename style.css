@@ -29,7 +29,7 @@ body {
   padding: 15px 30px;
   z-index:4;
   width: 100%;
-  opacity: 0.6;
+  opacity: 0.9;
   margin-top: 0px;
   overflow: hidden;
     font-weight: 900;
@@ -197,6 +197,8 @@ body {
     padding: 5px 10px;
     border-radius: 6px;
     opacity: 0;
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
   /* Keyframe animation for car movement across 10 points */
