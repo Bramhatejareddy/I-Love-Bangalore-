@@ -7,7 +7,7 @@
     <title>Caribbean Cities & Towns</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-
+         
 .body {
     display: flex;
     justify-content: center;
@@ -26,8 +26,8 @@
     flex-direction: column;
       justify-content: center;
       margin-left: 100px;
-     padding-right: 100px;
-      padding-top: 50px;
+      margin-right: 100px;
+      padding-top: 100px;
 }
 .cla{
     display: flex;
@@ -90,7 +90,7 @@ h1 {
 .card img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+  
     display: block;
     transition: 0.3s ease-in-out;
 }
@@ -101,11 +101,12 @@ h1 {
     left: 15px;
     font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: darkorange;
+    background-color: cadetblue;
+    border-radius: 10px;
+    padding: 4px 5px;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
-
-
 .left {
     left: -20px;
 }
@@ -126,48 +127,68 @@ h1 {
   gap: 15px;
   /* font-size: 10px; */
   margin-top: 15px;
+  background-color: darkgray;
+  /* margin-top: 20px;
+  margin-bottom: 65px; */
+  margin: 0px 0px 65px 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  border-radius: 10px;
+  border: 2px black solid;
+}
+.locationn{
+    background-color: darkgray;
+ 
 }
 .end{
   display: flex;
  justify-content: space-between;
  padding: 15px;
+ margin-left: 50px;
 }
+
+
+
+.in {
+     color: white;
+    background-color: darkgray;
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    border-radius: 10px;
+    border:2px solid #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    
+}
+.in:hover{
+    color: black;
+}
+* {
+    background-color: rgb(210, 206, 206);
+ }
 .bot{
+  background-color: rgb(210, 206, 206);
   height: 100vh;
   padding: 20px;
   padding-left: 50px;
 }
-* {
-    background-color: #ccd8de;
- }
 .foot{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100px;
-   
-}
-
-.frame{
-    border: 2px solid ;
-    margin-left: 200px;
-   
-}
-
- 
-.frame:hover {
-   
-    box-shadow: 0px 0px 10px 10px rgb(158, 199, 214);
-}
-
-.cla:hover{
-    color: rgb(208, 116, 116);
+    height: 70px;
+    padding-top: 10px;
+   box-shadow: 10px 10px 10px 10px black;
 }
 .paa{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    padding-bottom: 110px;
 }
 
 .pa{
@@ -180,20 +201,151 @@ h1 {
     flex-direction: row;
      text-decoration: none;
     align-items: center;
+    color: blueviolet;
     
 }
-p {
-    padding-bottom: 20px;
+
+.frame{
+    border: 2px solid ;
+    margin-left: 150px;
+   border-radius: 20px;
+   margin-top: 20px;
 }
+
+.btn{
+     text-decoration: none;
+  width: 100px;
+  height: 50px;
+  border: 2px solid;
+  border-radius: 30px;
+  background-color: darkgray;
+  color: #000;
+  display: flex;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+ }
+.btn:hover{
+    background-color: blueviolet;
+    color: black;
+} */
+.frame:hover {
+   
+    box-shadow: 0px 0px 10px 10px rgb(158, 199, 214);
+}
+input::placeholder{
+    color: black;
+}
+
+.cla:hover{
+    color: rgb(208, 116, 116);
+}
+p{
+    padding-bottom: 15px;
+}
+.span{
+    color: blueviolet;
+}
+.spann{
+    padding-left: 10px;
+    color: blueviolet;
+}
+.card{
+    margin-top: 30px;
+    border: 5px solid white;
+}
+.frame:hover{
+    box-shadow: 5px 1px 5px 5px rgb(123, 116, 116);
+}
+ 
+ 
+.headder {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  background-color: black;
+  color: white;
+  position: fixed;
+  padding: 10px 10px;
+  z-index:4;
+  width: 100%;
+  
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: black;
+}
+
+.logo img {
+  height: 40px;   
+  width: 40px;
+  border-radius: 50%;
+  background-color: black;
+  }
+
+
+.nav{
+  margin-right: 20px;
+  background-color: black;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  background-color: black;
+  
+}
+.nav a:hover {
+  color: #ffcc00;
+  background-color: black;
+
+}  
+
+
     </style>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+       
+  <!-- Header -->
+  <header class="headder">
+    <div class="logo">
+      <div><a href="h1.html"><img src="images/ub.jpg" alt="brsm"></a></div>
+       I Love Bengaluru
+       
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="food.html">Food</a>
+      <a href="malls.html">Malls</a>
+      <a href="top.html">Universities</a>
+      <a href="touristfinal.html">Tourist Places</a>
+      <a href="it.html">Companies</a>
+    </nav>
+  </header>
 
   <div>
     <div style=" height: 100vh;" >
     <div class="top">
-          <h1 class="cla">WELCOME TO TCS</h1>
+          <h1 class="cla">WELCOME TO <span class="spann">TCS</span></h1>
         <p class="claa">   A part of the Tata Group, India’s largest multinational business group, TCS has a highly skilled workforce of over 613,069 consultants in 55 countries and 202 service delivery centers across the world.
  
 </p>
@@ -207,48 +359,48 @@ p {
  </div>
 </div>
     <div class="container">
-        <h1>TCS <span class="highlight">India</span></h1>
+        <h1>TCS <span class="highlight">Bangalore</span></h1>
 
         <div class="slider-container">
          
             <div class="cards" id="cards">
                 <div class="card">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPWEhZ5tSaGp654YapFSh6n73u2KWaDwV5tAeGbDKRyYgQ4fMrqH7fVXY&s" alt="Santo Domingo" />
-                    <div class="overlay">Mumbai</div>
+                   
                 </div>
                 <div class="card">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx-7T-YwNvX7smmYMl0ND5DDXU5RxYaKaPuwnVV-FalSKk-MXKRrGCdxc&s" alt="Havana" />
-                    <div class="overlay">Chennai</div>
+             
                 </div>
                 <div class="card">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQct_t36h1z1qaCO6jdAeCXgUyg5H8pTQ0DlxjoZ3cRzzuGhCLvIdMHOCk&s" alt="Kingston" />
-                    <div class="overlay">Hyderabad</div>
+               
                 </div>
                 <div class="card">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD0TzHClf7PWl_1nUajFY2qqEY-V2u6mvIGg&s" alt="">               
-           <div class="overlay">Bangalore</div>
+          
                 </div>
                 <div class="card">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxE6GDiDGOiGl4ruNWaIcYZHvY66bktkpP_w&s" alt="Bridgetown" />
-                    <div class="overlay">Delhi</div>
+             
                 </div>
                 <div class="card">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0DixhARVIiO-hnsMP0om7D0MoFrZXVmWHCQ&s" alt="Nassau" />
-                    <div class="overlay">Pune</div>
+                 
                 </div>
             </div>
 
         </div>
         <div class="bot">
-     <h1>You Can Reach Out of to Us </h1>
+     <h1 class="span">You Can Reach Out of to Us </h1>
      <h3>Feel free to call us, send an email, or fill out the contact form, and we'll get back to you!</h3>
 <div class="end">
    <div class="otp">
-     <input type="Full Name" placeholder="Full Name"><br>
-    <input type="email" placeholder="Enter Email"><br>
-    <button style="background: blue;">password</button><br>
-    <input type="website" placeholder="Company website"><br>
-   <select name="slectmonthlybydget" id="slectmonthlybydget" class="form-control" required="">
+     <input class="in" type="Full Name" placeholder="Full Name"><br>
+    <input class="in" type="email" placeholder="Enter Email"><br>
+<input class="in" type="password" placeholder="Enter the password">   <br>
+ <input class="in" type="website" placeholder="Current City"><br>
+   <select name="slectmonthlybydget" id="slectmonthlybydget" class="form-control in" required="">
 															<option value="" selected="">Select monthly budget</option>
 															<option value="INR 50,000 to INR 1,00,000">INR 50,000
 																to INR 1,00,000</option>
@@ -260,7 +412,7 @@ p {
 																above</option>
 														</select>
                             <br>
-                            <select name="slectyourbusiness" autocomplete="off" class="form-control" required="">
+                            <select name="slectyourbusiness" autocomplete="off" class="form-control in" required="">
 															<option value="">Select Requirement</option>
 															<option value="Digital Marketing">Digital Marketing
 															</option>
@@ -279,17 +431,17 @@ p {
 															<option value="Careers"> Careers</option>
 															<option value="Others">Others</option>
 														</select><br>
-                        <input type="text" placeholder="country " ><br>
-                        <button style="block-size: auto; color: white ; background-color: blue;">Submit</button>
+                        <input class="in" type="text" placeholder="Country " ><br>
+                        <a href="" class="btn">submit</a>
    </div>
    <div>
    
    <div class="location">
-    <h1>Head Office: Bengalore</h1>
+    <h1 class="locationn">Head Office: Bengalore</h1>
  Address:XPMP+8PV, ITPL Main Rd, Pattandur Agrahara, Kadugodi, Whitefield,<br> Bengaluru, Karnataka 560066 <br><br> phone:
 080672 47276 <br><br> Email
  connect@tcs.com <br> Get in Touch
-<div class="paa" style="display: flex max-width: 10px;">
+<div class="paa locationn" style="display: flex max-width: 10px;">
  <a href="https://www.facebook.com/TataConsultancyServices" class="pa fa-brands fa-facebook"></a>
  <a href="https://www.youtube.com/user/TCSGlobal" class="pa fa-brands fa-youtube"></a>
  <a href="https://www.instagram.com/tcsglobal/" class="pa fa-brands fa-instagram"></a>
@@ -300,16 +452,10 @@ p {
    </div>
    </div>
     </div>  
-    <!-- footer -->
-    <footer class="footer">
-    <div class="nav">
-    <a href="index.html">Home</a>
-      <a href="food.html">Food</a>
-      <a href="malls.html">Places</a>
-      <a href="it.html">Contact</a>
-      </div>
-    <p>© 2025  I Love Bengaluru.@Goal Diggers All rights reserved.</p>
-  </footer>
+    <footer class="foot">
+        <div> copyright © 2025 visit_Bangalore.All right reserved </div>
+        <div>Design: TemplateMo</div>
+    </fọoter>
 </body>̣
 </html>
 

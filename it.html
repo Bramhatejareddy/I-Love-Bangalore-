@@ -1,47 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IT Companies in Bangalore</title>
-  <style>
-/* Header */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing:border-box;
-  text-decoration: none;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+            
+        
 
-}
-body {
-  margin: auto;
- 
-  font-family: 'Times New Roman', Times, serif;
-  box-sizing: border-box;
-
-  background-size: cover;
-}
-.header {
+.headder {
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #1e1e1e, #575656);
-  /* background-color: transparent; */
+ 
+  background-color: black;
   color: white;
   position: fixed;
-  padding: 15px 30px;
+  padding: 10px 10px;
   z-index:4;
   width: 100%;
-  opacity: 0.8;
-  margin-top: 0px;
-  overflow: hidden;
-    font-weight: 900;
-    box-sizing: border-box;
-
-
-
+  
 }
-
+*{
+  padding: 0;
+  margin: 0;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -49,168 +33,124 @@ body {
   justify-content: space-between;
   font-weight: bold;
   font-size: 1.2rem;
-
+  
 }
 
 .logo img {
-  height: 40px;   /* adjust size */
+  height: 40px;   
   width: 40px;
   border-radius: 50%;
   }
 
 
-
+.nav{
+  margin-right: 20px;
+}
 
 .nav a {
   color: white;
   text-decoration: none;
   margin-left: 20px;
   font-weight: 500;
-  /* position: sticky; */
+  
 }
-
-
-
 .nav a:hover {
   color: #ffcc00;
-}
-/* Add top space so title doesn't hide behind header */
-.fields {
-  padding-top: 12px;
+  background-color: black;
+
+}  
+
+
+    
+        .it{
+           display: flex;
+           /* border: 2px solid chocolate; */
+           text-align: center;
+           background-color: #ccd8de;
+           color: chocolate;
+           justify-content: center;
+           box-sizing: content-box;
+          padding-top: 75px;
+         }
+        .field{
+             background-color: #ccd8de;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            padding-top: 50px;
+            padding-left: 100px;
+            gap: 20px;
+            padding-bottom: 40px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img:hover{
+             transform: scale(1.1);
+             
+    
+        }
+        img a:{
+             display: inline;
+        }
+        .foot{
+             background-color: #ccd8de;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             height: 70px;
+             padding-bottom: 20px;
+             box-shadow: 5px 5px 5px 5px black;
+        }
   
-  
-    /* adjust as needed */
-}
+        a:hover {
+         
+             background-color: blueviolet;        
+        }
+          
+        .but{
+             height: 30px;
+             border-radius: 30px;
+             text-decoration: none;
+             width: 100px;
+             height: 30px;
+             background-color: chocolate;
+             border: 2px solid;
+             border-radius: 30px;
+             color: white;
+             display: flex;
+             font-size: 15px;
+             justify-content: center;
+             padding-top: 15px;
+         
+        }
+         
+        .buts{
+          margin-left: 0px;
 
-.heading {
-  border: 2px solid chocolate;
-  text-align: center;
-  background-color: #ccd8de;
-  color: chocolate;
-  align-content: center;
-  box-sizing:border-box;
-  margin-top: 50px;
-  height: 10rem;
-  
-}
-.heading h1 {
-  font-size: 2.5rem;
-  margin: auto;
-  font-weight: 700;
-}
-/* 
-.field {
-  background-color: #ccd8de;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  padding: 50px 0 40px 10px;
-  gap: 20px;
-}
-
-img {
-  border-radius: 25px;
-  height: 200px;
-  width: 400px;
-  transition: transform 0.3s ease-in-out;
-  overflow: hidden;
-} */
-/* img:hover {
-  transform: scale(1.1);
-} */
-
-
-
-
-
-.field {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 4rem;
-
-
-}
-
-/* Card Styles */
-.field .img {
-  border-radius: 30px;
-  color: white;
-  box-shadow: 0 0px 0px 5 white;
-  object-fit:fill;
-  overflow: hidden;
-  box-sizing: border-box;
-
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.field .img:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-}
-
-/* Card Image */
-/* .card-img {
-  width: 100%;
-  height: 180px;
-  background-size: cover;
-  background-position: center;
-  transition: transform 0.5s ease;
-} */
-
-.img:hover .img {
-  transform: scale(1.1);
-}
-
-
-
-.footer {
-  background: #1a1a1a;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-  position: relative;
-}
-
-.career, .but {
-  text-decoration: none;
-  width: 120px;
-  height: 35px;
-  background-color: chocolate;
-  border: 2px solid;
-  border-radius: 30px;
-  color: white;
-  display: flex;
-  font-size: 15px;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s ease;
-}
-.career:hover, .but:hover {
-  background-color: blueviolet;
-}
-.careers {
-  margin-left: 10px;
-  margin-top: 10px;
-}
-.buts {
-  margin-left: 10px;
-  margin-top: 10px;
-}
-.heading:hover {
-  color: rgb(45, 45, 218);
-  box-shadow: 0px 0px 10px 0px rgb(145, 64, 64);
-}
-  </style>
+         }
+         
+        .heading:hover{
+             color: blue;
+            box-shadow: 0px 0px 5px 0px rgb(145, 64, 64);
+        }
+        .foott a{
+          color: black;
+          background-color: #ccd8de;
+          text-decoration: none;
+          padding-right: 15px;
+        }
+        .foott{
+          padding-top: 10px;
+        }
+    </style>
 </head>
 <body>
-  <section id="Contact">
-    <header class="header">
+
+  
+  <!-- Header -->
+  <header class="headder">
     <div class="logo">
-      <div><a href="index.html"><img src="images/ub.jpg" alt="brsm"></a></div>
+      <div><a href="h1.html"><img src="images/ub.jpg" alt="brsm"></a></div>
        I Love Bengaluru
        
     </div>
@@ -223,63 +163,64 @@ img {
       <a href="it.html">Companies</a>
     </nav>
   </header>
-
-   <div class="fields">
-      <header class="heading">
-        <h1>IT COMPANIES IN BANGALORE</h1>
-      </header>
-       
-
-      <!-- Images and links -->
-      <div class="field">
-        <!-- Google -->
-        <div class="img">
-          <img src="https://www.planetizen.com/files/styles/featured_small/public/images/shutterstock_192086159.jpg.webp?itok=9vpXKGi0" alt="Google">
-          <div class="careers">
-            <a href="google.html" class="career">Explore More</a>
-          </div>
+  <section>
+  <div class="fields">
+    <header class="it">
+  <h1>IT COMPANIES IN BANGALORE</h1>
+</header>
+<!-- Durga -->
+    <div class="field">
+   
+      <div class="img"> 
+          <img src="https://www.planetizen.com/files/styles/featured_small/public/images/shutterstock_192086159.jpg.webp?itok=9vpXKGi0" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="border-radius: 25px; max-width: 400px; height: 200px; margin: 0px; width: 400px;" alt="Google's Second Headquarters and the Future of San Jose | Planetizen News" jsname="kn3ccd "  >
+      <div class="buts" >
+            <a href=google.html class="but">Explore More</a>
+         </div>
+        </div> 
+        
+        <div class="img"> 
+          <img src="https://images.financialexpressdigital.com/2025/06/Untitled-design-3-5.png?w=440" alt="tcs" style=" height: 200px; width: 400px;border-radius: 25px;">      
+        <div class="buts">
+                  <a href=tcs.html class="but">Explore More</a>  
         </div>
-
-        <!-- TCS -->
-        <div class="img">
-          <img src="https://images.financialexpressdigital.com/2025/06/Untitled-design-3-5.png?w=440" alt="TCS">
-          <div class="buts">
-            <a href="tcs.html" class="but">Explore More</a>
-          </div>
+        </div> 
+        
+          <div class="img"> 
+     
+            <img src="https://www.pandemictechnews.com/wp-content/uploads/2020/04/ibm-campus.jpg" alt="ibm" style="border-radius: 25px;height: 200px; width: 400px;">
+        <div class="buts">
+               <a href=ibm.html class="but">Explore More</a>
+           
+        </div>  
         </div>
+          <div class="img"> 
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3TKXJ6pXwBMFqJ_cMlKfHDqPxm-bp32BRIw&s" alt="hcl"  style="border-radius: 25px;height: 200px; width: 400px;">
+         <div class="buts">
+            <a href=hcl.html class="but">Explore More</a>
+           
+         </div>
+            </div>
 
-        <!-- IBM -->
-        <div class="img">
-          <img src="images/ibm.jpg" alt="IBM">
-          <div class="buts">
-            <a href="ibm.html" class="but">Explore More</a>
-          </div>
-        </div>
-
-        <!-- HCL -->
-        <div class="img">
-          <img src="https://media.glassdoor.com/lst2x/70/38/c2/0b/hcl-125.jpg" alt="HCL">
-          <div class="buts">
-            <a href="hcl.html" class="but">Explore More</a>
-          </div>
-        </div>
-      </div>
     </div>
-    </section>
-
-    <!-- footer -->
-    <footer class="footer">
-    <div class="nav">
-     <a href="index.html">Home</a>
+    </div>
+<!-- footer -->
+    <footer class="foot">
+      <div class=" foott">
+      <a href="index.html">Home</a>
       <a href="food.html">Food</a>
       <a href="malls.html">Malls</a>
       <a href="top.html">Universities</a>
       <a href="touristfinal.html">Tourist Places</a>
-      <a href="com.html">Companies</a>
+      <a href="it.html">Companies</a>
       </div>
-    <p>© 2025  I Love Bengaluru.@Goal Diggers All rights reserved.</p>
-  </footer>
-  
+    <br>
+        <div> copyright © 2025 visit_Bangalore.All right reserved </div>
+        <div>Design: TemplateMo</div>
+    </fọoter>
+    </section>
 </body>
-</html> 
+</html>
+
+
+
 
